@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
+        android:id="@+id/idTitle"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:text="T1807E"
@@ -10,4 +11,18 @@
         android:textSize="20sp"
         android:textStyle="bold|italic"
         android:background="#03A9F4"/>
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#27F403"
+        android:src="@drawable/funny"
+        android:scaleType="centerCrop"/>
 </LinearLayout>
