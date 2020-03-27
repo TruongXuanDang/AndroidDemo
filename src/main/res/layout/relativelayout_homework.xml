@@ -22,7 +22,6 @@
         android:background="#FFEB3B"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:alig="true"
         android:text="b2"
         android:textColor="#fff"
         android:textSize="30sp"
@@ -52,6 +51,7 @@
         android:textColor="#fff"
         android:textSize="30sp"
         android:gravity="center"
+        android:layout_marginLeft="20dp"
         />
 
     <TextView
@@ -61,9 +61,10 @@
         android:background="#E91E63"
         android:layout_toRightOf="@id/B1"
         android:layout_centerVertical="true"
-        android:text="b5"
+        android:text="@string/b5"
         android:textColor="#fff"
         android:textSize="30sp"
         android:gravity="center"
+        android:layout_marginRight="20dp"
         />
 </RelativeLayout>

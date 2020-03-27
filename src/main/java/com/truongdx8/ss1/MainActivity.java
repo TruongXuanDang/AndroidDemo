@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo);
 
+      //Doan code nay dung cho page activity_demo
         buttontLogin = findViewById(R.id.btLogin);
         tvTitle = findViewById(R.id.idTitle);
         ivCover = findViewById(R.id.imgCover);
