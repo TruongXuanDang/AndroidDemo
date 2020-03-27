@@ -32,11 +32,11 @@
         android:id="@+id/B1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="b1"
         android:background="#9C27B0"
         android:gravity="center"
         android:layout_below="@id/B2"
         android:layout_centerHorizontal="true"
+        android:text="b1"
         android:textColor="#fff"
         android:textSize="30sp"
         />
