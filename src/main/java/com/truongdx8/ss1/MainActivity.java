@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linierlayout_homework2);
+        setContentView(R.layout.relativelayout_homework2);
 
       /*//Doan code nay dung cho page activity_demo
         buttontLogin = findViewById(R.id.btLogin);
