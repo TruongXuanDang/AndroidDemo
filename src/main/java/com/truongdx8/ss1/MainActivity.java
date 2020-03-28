@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo);
+        setContentView(R.layout.linierlayout_homework2);
 
-      //Doan code nay dung cho page activity_demo
+      /*//Doan code nay dung cho page activity_demo
         buttontLogin = findViewById(R.id.btLogin);
         tvTitle = findViewById(R.id.idTitle);
         ivCover = findViewById(R.id.imgCover);
@@ -37,6 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 String userName = edUser.getText().toString();
                 tvTitle.setText(userName);
             }
-        });
+        });*/
     }
 }
