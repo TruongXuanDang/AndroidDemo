@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:text="Doanh thu pokemon go"
                 android:textStyle="bold"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="20sp"
                 android:gravity="center_vertical"/>
             <TextView
                 android:layout_width="match_parent"
