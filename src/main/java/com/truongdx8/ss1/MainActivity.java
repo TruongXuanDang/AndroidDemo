@@ -2,6 +2,7 @@ package com.truongdx8.ss1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvTitle;
     ImageView ivCover;
     EditText edUser;
+    public String Tag = "Log: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,5 +40,32 @@ public class MainActivity extends AppCompatActivity {
                 tvTitle.setText(userName);
             }
         });*/
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(Tag,"OnStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(Tag,"onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
