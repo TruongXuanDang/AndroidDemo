@@ -110,7 +110,7 @@
                 android:gravity="center"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:background="@drawable/my_facebookbuttonborder"/>
+                android:background="@drawable/background_button"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="80dp"
@@ -120,7 +120,7 @@
                 android:gravity="center"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:background="@drawable/my_facebookbuttonborder"
+                android:background="@drawable/state_drawable"
                 />
             <TextView
                 android:layout_width="0dp"
