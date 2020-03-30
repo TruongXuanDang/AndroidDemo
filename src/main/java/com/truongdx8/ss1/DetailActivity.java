@@ -21,7 +21,6 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         Intent intent = getIntent();
         String usb = intent.getStringExtra("USB");
-        int money = intent.getIntExtra("Money",0);
 
         tvUSB = findViewById(R.id.tbUsb);
         tvUSB.setText(usb);

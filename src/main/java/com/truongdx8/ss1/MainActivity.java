@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.relativelayout_homework2);
-        commentbt = findViewById(R.id.commentbt);
+        commentbt = findViewById(R.id.abcbtn);
         commentbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
