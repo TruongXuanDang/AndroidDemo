@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
     private void goDetailActivity(){
 
         Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+        intent.putExtra("USB","Kingston");
+        intent.putExtra("Money",100000);
         startActivity(intent);
     }
 
