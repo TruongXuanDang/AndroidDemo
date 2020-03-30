@@ -2,6 +2,7 @@ package com.truongdx8.ss1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,11 +18,19 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivCover;
     EditText edUser;
     public String Tag = "Log: ";
+    Button commentbt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.relativelayout_homework2);
+        commentbt = findViewById(R.id.commentbt);
+        commentbt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goDetailActivity();
+            }
+        });
 
       /*//Doan code nay dung cho page activity_demo
         buttontLogin = findViewById(R.id.btLogin);
@@ -42,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
         });*/
     }
 
+    private void goDetailActivity(){
+
+        Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -57,15 +72,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        Log.d(Tag,"onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        Log.d(Tag,"onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.d(Tag,"onDestroy");
     }
 }
