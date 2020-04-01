@@ -7,9 +7,12 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,17 +23,39 @@ public class MainActivity extends AppCompatActivity {
     public String Tag = "Log: ";
     Button commentbt;
 
+    ListView lvContact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.relativelayout_homework2);
+        setContentView(R.layout.listview_layout);
+
+        //B1: lv contact
+        lvContact = findViewById(R.id.lvListView);
+
+        //B2: Datasource
+        final String[]data = {"Samsung","LG"};
+
+        //B3: Adapter
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,data);
+        lvContact.setAdapter(adapter);
+
+        lvContact.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = data[position];
+                Log.d("TAG MainActivity", item);
+            }
+        });
+
+       /* //doan code nay dung cho relativelayout_homework2
         commentbt = findViewById(R.id.abcbtn);
         commentbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goDetailActivity();
             }
-        });
+        });*/
 
       /*//Doan code nay dung cho page activity_demo
         buttontLogin = findViewById(R.id.btLogin);
