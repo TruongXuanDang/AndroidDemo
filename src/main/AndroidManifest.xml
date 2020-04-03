@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Class5Demo"
+            android:label="@string/title_activity_class5_demo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MusicAppDemo"
             android:label="@string/title_activity_music_app_demo"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListView_ContactActivity"
             android:label="@string/title_activity_list_view__contact"
@@ -27,7 +31,7 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
