@@ -12,7 +12,14 @@
         <activity
             android:name=".Class5Demo"
             android:label="@string/title_activity_class5_demo"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MusicAppDemo"
             android:label="@string/title_activity_music_app_demo"

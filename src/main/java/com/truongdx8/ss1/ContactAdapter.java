@@ -1,6 +1,7 @@
 package com.truongdx8.ss1;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -40,15 +41,32 @@ public class ContactAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = activity.getLayoutInflater().inflate(R.layout.item_contact,parent,false);
 
-        ImageView ivAvatar = convertView.findViewById(R.id.ivAvatar);
-        TextView tvName = convertView.findViewById(R.id.tvUser);
+        if(convertView == null)
+        {
+            Log.d("ContactAdapter","getView: "+convertView);
+            convertView = activity.getLayoutInflater().inflate(R.layout.item_contact,parent,false);
+
+
+            ViewHolder holder = new ViewHolder();
+            holder.ivAvatar = convertView.findViewById(R.id.ivAvatar);
+            holder.tvName = convertView.findViewById(R.id.tvUser);
+
+            convertView.setTag(holder);
+        }
+
+        ViewHolder holder = (ViewHolder) convertView.getTag();
 
         Contact item = contactList.get(position);
-        ivAvatar.setImageResource(item.getAvater());
-        tvName.setText(item.getName());
+        holder.ivAvatar.setImageResource(item.getAvater());
+        holder.tvName.setText(item.getName());
 
         return convertView;
+    }
+
+    static class ViewHolder{
+        ImageView ivAvatar;
+        TextView tvName;
+
     }
 }
