@@ -9,19 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Class5Homework">
+        <activity android:name=".Book">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Class5Homework">
+
+        </activity>
         <activity
             android:name=".Class5Demo"
             android:label="@string/title_activity_class5_demo"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".MusicAppDemo"
             android:label="@string/title_activity_music_app_demo"
@@ -29,13 +30,12 @@
         <activity
             android:name=".ListView_ContactActivity"
             android:label="@string/title_activity_list_view__contact"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
-
     </application>
 
 </manifest>
